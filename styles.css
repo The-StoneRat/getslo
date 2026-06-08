@@ -78,3 +78,20 @@ footer .sep { margin: 0 10px; opacity: 0.5; }
 .doc a { color: var(--accent); }
 .doc strong { color: var(--fg); }
 .doc .updated { color: var(--muted); font-size: 15px; }
+.doc .subtitle { color: var(--muted); font-size: 18px; margin: 0 0 8px; }
+.doc .part { font-size: 26px; margin: 48px 0 8px; border-left: 3px solid var(--accent); padding-left: 12px; }
+.doc .notice {
+  background: #141414;
+  border: 1px solid #1f1f1f;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: #d4d4d4;
+}
+.doc .contact {
+  border-left: 2px solid var(--accent);
+  padding: 4px 16px;
+  margin: 16px 0;
+}
+.doc .contact p { margin: 4px 0; }
+.doc .footnote { color: var(--muted); font-size: 14px; margin-top: 48px; border-top: 1px solid #1f1f1f; padding-top: 16px; }
