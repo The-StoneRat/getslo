@@ -6,6 +6,7 @@
   --card: #f5f5f4;
   --card-border: #ececeb;
   --measure: 720px;
+  --font-title: "Satoshi", "Roboto Flex", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -73,8 +74,9 @@ body {
   padding: 72px 24px 56px;
 }
 .headline {
+  font-family: var(--font-title);
   font-size: 34px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.02em;
   line-height: 1.12;
 }
@@ -128,8 +130,9 @@ body {
   padding: 48px 0;
 }
 .feature h2 {
+  font-family: var(--font-title);
   font-size: 27px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.01em;
   line-height: 1.2;
 }
@@ -148,12 +151,10 @@ body {
   border-radius: 22px;
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.10);
 }
-.feature.spotlight h2 { color: var(--accent); }
-.feature.spotlight .shot img { box-shadow: 0 12px 48px rgba(242, 183, 5, 0.28); }
 
 /* FAQ — centered */
 .faq { padding: 56px 0; text-align: center; }
-.faq-title { font-size: 27px; font-weight: 800; margin-bottom: 12px; }
+.faq-title { font-family: var(--font-title); font-size: 27px; font-weight: 900; margin-bottom: 12px; }
 .qa {
   border-top: 1px solid var(--card-border);
   padding: 18px 4px;
