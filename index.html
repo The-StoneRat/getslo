@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Slo — slow photos, real prints, mailed to your door</title>
-  <meta name="description" content="Slo is a slow-photography app. Fill a pack at your own pace and we mail you real prints.">
+  <meta name="description" content="Slo turns your phone into a film camera. Shoot a pack at your own pace, then we print every frame and mail it to your door.">
   <meta property="og:title" content="Slo">
   <meta property="og:description" content="Slow photos. Real prints, mailed to your door.">
   <meta property="og:type" content="website">
@@ -14,31 +14,105 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <section class="hero wrap">
-      <h1 class="wordmark">Slo.</h1>
-      <p class="tagline">Slow photos. Real prints, mailed to your door.</p>
-      <a class="cta" href="https://play.google.com/store/apps/details?id=art.stonerat.slo">
+  <!-- 1. Nav -->
+  <header class="nav wrap">
+    <a class="wordmark-sm" href="/">Slo.</a>
+    <nav class="nav-cta">
+      <a class="badge-link" href="https://play.google.com/store/apps/details?id=art.stonerat.slo">
         <img src="assets/google-play-badge.png" alt="Get it on Google Play">
       </a>
+      <a class="pill" href="mailto:stonerat.who@gmail.com?subject=Notify%20me%20when%20Slo%20for%20iOS%20launches">iOS — coming soon</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. Hero -->
+    <section class="hero wrap">
+      <h1 class="wordmark">Slo.</h1>
+      <p class="headline">Slow photos. Real prints, mailed to your door.</p>
+      <p class="subline">Slo turns your phone into a film camera. Shoot a pack at your own pace — then we print every frame and mail it to you.</p>
+      <div class="store-row">
+        <a class="badge-link" href="https://play.google.com/store/apps/details?id=art.stonerat.slo">
+          <img src="assets/google-play-badge.png" alt="Get it on Google Play">
+        </a>
+        <a class="pill" href="mailto:stonerat.who@gmail.com?subject=Notify%20me%20when%20Slo%20for%20iOS%20launches">iOS — coming soon</a>
+      </div>
     </section>
 
-    <section class="steps wrap">
-      <div class="step">
-        <h3><span>1.</span>Take your shots</h3>
-        <p>A pack holds a handful of frames. Make each one count.</p>
+    <!-- 3. Video block — SWAP POINT: replace placeholder with real demo video/poster -->
+    <section class="video wrap">
+      <div class="video-card" aria-label="App demo — coming soon">
+        <span class="play" aria-hidden="true"></span>
+        <span class="video-label">Demo coming soon</span>
       </div>
-      <div class="step">
-        <h3><span>2.</span>Fill the pack</h3>
-        <p>Shoot across a trip, a weekend, a season. No rush.</p>
-      </div>
-      <div class="step">
-        <h3><span>3.</span>Prints in your mailbox</h3>
-        <p>When the pack is full, we mail real prints to your door.</p>
-      </div>
-      <img class="shot" src="assets/screenshot-placeholder.svg" alt="Slo app screenshot">
     </section>
 
+    <!-- 4–7. Features -->
+    <section class="features wrap">
+      <article class="feature">
+        <div class="feature-copy">
+          <h2>A camera that feels like a camera</h2>
+          <p>Ground-glass viewfinder, a real shutter. Slo is built to slow you down: frame it, feel it, take the shot.</p>
+        </div>
+        <!-- SWAP POINT: viewfinder screenshot -->
+        <div class="feature-media"><img src="assets/screenshot-placeholder.svg" alt="Slo viewfinder"></div>
+      </article>
+
+      <article class="feature reverse">
+        <div class="feature-copy">
+          <h2>Film tones, baked in at the shutter</h2>
+          <p>Every pack carries its own film look, applied the moment you press the shutter — not faked afterward. No sliders, no AI cleanup, nothing to edit. The grain stays.</p>
+        </div>
+        <!-- SWAP POINT: film-tone sample -->
+        <div class="feature-media"><img src="assets/screenshot-placeholder.svg" alt="Film tones sample"></div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-copy">
+          <h2>Fill a pack at your own pace</h2>
+          <p>A pack holds a handful of slots. Shoot them across a night, a trip, a season. No timer, no rush — when it's full, it's ready.</p>
+        </div>
+        <!-- SWAP POINT: pack progress screenshot -->
+        <div class="feature-media"><img src="assets/screenshot-placeholder.svg" alt="Filling a pack"></div>
+      </article>
+
+      <article class="feature reverse spotlight">
+        <div class="feature-copy">
+          <h2>Then we mail you the prints</h2>
+          <p>Finish a pack and we print every frame on real paper and post it to your door. Your photos leave the screen and land in your hands.</p>
+        </div>
+        <!-- SWAP POINT: prints / envelope photo -->
+        <div class="feature-media"><img src="assets/screenshot-placeholder.svg" alt="Prints mailed to your door"></div>
+      </article>
+    </section>
+
+    <!-- 8. FAQ — MVP set (answerable now). Curate + add the rest later. -->
+    <section class="faq wrap">
+      <h2 class="faq-title">Common questions</h2>
+
+      <details class="qa">
+        <summary>Can I edit the photos?</summary>
+        <p>No. Each pack's film look is set up front and baked in at the shutter — there's nothing to edit.</p>
+      </details>
+
+      <details class="qa">
+        <summary>Can I use my own filters or LUTs?</summary>
+        <p>No. Every pack has one fixed film look. Pick the pack, get the look.</p>
+      </details>
+
+      <details class="qa">
+        <summary>When is the iOS app coming?</summary>
+        <p>It's in active development now. <a href="mailto:stonerat.who@gmail.com?subject=Notify%20me%20when%20Slo%20for%20iOS%20launches">Get notified</a> when it lands.</p>
+      </details>
+
+      <!-- TODO (do not invent — confirm before publishing):
+      <details class="qa"><summary>How many photos are in a pack?</summary><p>__ slots per pack.</p></details>
+      <details class="qa"><summary>What does a pack cost, and is shipping included?</summary><p>__</p></details>
+      <details class="qa"><summary>Where do you ship prints?</summary><p>__</p></details>
+      -->
+    </section>
+
+    <!-- 9. Footer -->
     <footer class="wrap">
       <a href="/privacy">Privacy</a>
       <span class="sep">·</span>
