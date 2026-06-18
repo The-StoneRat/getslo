@@ -25,7 +25,30 @@ body {
 .wrap {
   max-width: var(--measure);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 28px;
+}
+@media (max-width: 480px) {
+  .wrap { padding: 0 24px; }
+  .nav { gap: 10px; }
+  .nav-cta { gap: 8px; }
+}
+
+/* Brand mark (app icon, heavily rounded) */
+.brand-mark {
+  display: block;
+  margin: 0 auto 26px;
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.16);
+}
+.end-mark { text-align: center; padding: 40px 0 8px; }
+.brand-mark-lg {
+  display: inline-block;
+  width: 148px;
+  height: 148px;
+  border-radius: 30%;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.18);
 }
 
 .muted-label { color: var(--muted); font-size: 15px; }
