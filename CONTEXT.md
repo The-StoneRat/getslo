@@ -27,8 +27,8 @@ Static HTML/CSS, no build step. Hosted on GitHub Pages, custom domain `getslo.ca
 
 ## Design
 
-- Dark brand: bg `#0a0a0a`, accent `#f2b705`, text `#fafafa`, font Roboto Flex.
-- Single-column, centered, airy. Soft rounded cards. One accent color.
+- **Light theme** (revised 2026-06-18): bg `#ffffff`, text `#0f0f10`, muted `#6b6b70`, soft cards `#f5f5f4`/border `#ececeb`, accent `#f2b705` (yellow, sparing — wordmark dot, play triangle, prints spotlight). Font Roboto Flex.
+- Single-column, **centered**, airy, deep whitespace. Big soft rounded cards on white. One accent color. (Earlier dark `#0a0a0a` brand was dropped for a light/airy aesthetic.)
 - Layout *pattern* inspired by single-product app landings (nav → hero+store CTA → video → stacked feature cards → FAQ → minimal footer). Design and copy are original to Slo.
 
 ## Page structure (locked 2026-06-18)
