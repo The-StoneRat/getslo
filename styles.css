@@ -185,6 +185,25 @@ body {
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.10);
 }
 
+/* Transparent SVG on a black card (prints section) */
+.deliver-card {
+  background: #000;
+  border-radius: 22px;
+  padding: 56px 44px;
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+}
+.deliver-card img {
+  width: 100%;
+  max-width: 340px;
+  max-height: 460px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* FAQ — centered, borderless */
 .faq { padding: 88px 0; text-align: center; }
 .faq-title { font-family: var(--font-title); font-size: 27px; font-weight: 900; margin-bottom: 28px; }
