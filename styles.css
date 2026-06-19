@@ -104,7 +104,7 @@ body {
 /* Hero — centered */
 .hero {
   text-align: center;
-  padding: 72px 24px 56px;
+  padding: 88px 24px 72px;
 }
 .headline {
   font-family: var(--font-title);
@@ -157,10 +157,10 @@ body {
 }
 
 /* Features — centered title + soft card */
-.features { padding: 48px 0; }
+.features { padding: 64px 0; }
 .feature {
   text-align: center;
-  padding: 48px 0;
+  padding: 64px 0;
 }
 .feature h2 {
   font-family: var(--font-title);
@@ -170,7 +170,7 @@ body {
   line-height: 1.2;
 }
 .feature .lede {
-  margin: 14px auto 28px;
+  margin: 16px auto 36px;
   color: var(--muted);
   font-size: 18px;
   max-width: 50ch;
@@ -185,12 +185,11 @@ body {
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.10);
 }
 
-/* FAQ — centered */
-.faq { padding: 56px 0; text-align: center; }
-.faq-title { font-family: var(--font-title); font-size: 27px; font-weight: 900; margin-bottom: 12px; }
+/* FAQ — centered, borderless */
+.faq { padding: 88px 0; text-align: center; }
+.faq-title { font-family: var(--font-title); font-size: 27px; font-weight: 900; margin-bottom: 28px; }
 .qa {
-  border-top: 1px solid var(--card-border);
-  padding: 18px 4px;
+  padding: 16px 4px;
   text-align: left;
 }
 .qa summary {
@@ -210,17 +209,15 @@ body {
   margin-left: 16px;
 }
 .qa[open] summary::after { content: "–"; }
-.qa p { margin-top: 12px; color: var(--muted); font-size: 17px; }
+.qa p { margin-top: 14px; color: var(--muted); font-size: 17px; line-height: 1.7; }
 .qa a { color: #b8860b; }
 
 /* Footer — centered */
 footer {
   text-align: center;
-  border-top: 1px solid var(--card-border);
-  padding: 40px 0 64px;
+  padding: 24px 0 72px;
   color: var(--muted);
   font-size: 15px;
-  margin-top: 24px;
 }
 .footer-mark { display: inline-block; margin-bottom: 12px; }
 .footer-links a { color: var(--muted); text-decoration: none; }
