@@ -3,17 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Slo — slow photos, real prints, mailed to your door</title>
-  <meta name="description" content="Slo turns your phone into a film camera. Shoot a pack at your own pace, then we print every frame and mail it to your door.">
-  <meta property="og:title" content="Slo">
-  <meta property="og:description" content="Slow photos. Real prints, mailed to your door.">
+
+  <title>Slo — Slow photos, real prints mailed to your door</title>
+  <meta name="description" content="Slo turns your phone into a film camera. Shoot a pack of frames at your own pace, and we print every photo and mail it to your door. Free on Android; iOS coming soon.">
+  <link rel="canonical" href="https://getslo.cam/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0f0f10">
+  <meta name="author" content="Slo">
+  <meta name="keywords" content="film camera app, photo printing app, print photos by mail, slow photography, disposable camera app, mail photo prints, Android camera app">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Slo">
+  <meta property="og:title" content="Slo — Slow photos, real prints mailed to your door">
+  <meta property="og:description" content="Shoot a pack of frames at your own pace. We print every photo and mail it to your door.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://getslo.cam/">
+  <meta property="og:image" content="https://getslo.cam/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Slo — Slow photos, real prints mailed to your door">
+  <meta name="twitter:description" content="Shoot a pack of frames at your own pace. We print every photo and mail it to your door.">
+  <meta name="twitter:image" content="https://getslo.cam/assets/og.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700;8..144,800&display=swap">
   <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@700,900&display=swap">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured data: app + FAQ (answer-engine optimization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Slo",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "PhotoApplication",
+    "url": "https://getslo.cam/",
+    "image": "https://getslo.cam/assets/icon.png",
+    "description": "Slo turns your phone into a film camera. Shoot a pack of frames at your own pace, and we print every photo and mail it to your door.",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=art.stonerat.slo",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I edit the photos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Each pack's film look is set up front and baked in at the shutter — there's nothing to edit." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use my own filters or LUTs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Every pack has one fixed film look. Pick the pack, get the look." }
+      },
+      {
+        "@type": "Question",
+        "name": "When is the iOS app coming?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It's in active development now. You can ask to be notified when it lands." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- 1. Nav -->
@@ -69,37 +134,37 @@
       <article class="feature">
         <h2>A camera that feels like a camera</h2>
         <p class="lede">Ground-glass viewfinder, a real shutter, and the pack's film look baked in the moment you press it — no sliders, no AI cleanup, nothing to edit.</p>
-        <div class="shot"><img src="assets/shot-camera.png" alt="Slo camera viewfinder with frames left counter" loading="lazy"></div>
+        <div class="shot"><img src="assets/shot-camera.webp" alt="Slo camera viewfinder with frames left counter" loading="lazy"></div>
       </article>
 
       <article class="feature">
         <h2>Keep only what matters</h2>
         <p class="lede">Right after the shot, keep it or let it go. Your pack holds the frames you meant to take.</p>
-        <div class="shot"><img src="assets/shot-keep.png" alt="Keep or discard a frame" loading="lazy"></div>
+        <div class="shot"><img src="assets/shot-keep.webp" alt="Keep or discard a frame" loading="lazy"></div>
       </article>
 
       <article class="feature">
         <h2>Bring in shots you already love</h2>
         <p class="lede">Pull photos straight from your library into a pack — the ones already worth printing.</p>
-        <div class="shot"><img src="assets/shot-gallery.png" alt="Import photos from your gallery" loading="lazy"></div>
+        <div class="shot"><img src="assets/shot-gallery.webp" alt="Import photos from your gallery" loading="lazy"></div>
       </article>
 
       <article class="feature">
         <h2>Choose your print size</h2>
         <p class="lede">One paper size per pack — square prints, 4×6, or a photo book. Pick again next time.</p>
-        <div class="shot"><img src="assets/shot-printsize.png" alt="Choose a print size" loading="lazy"></div>
+        <div class="shot"><img src="assets/shot-printsize.webp" alt="Choose a print size" loading="lazy"></div>
       </article>
 
       <article class="feature">
         <h2>Your photos, finally together</h2>
         <p class="lede">Every frame backs up as you shoot. When the pack is full, the whole set is synced and ready to print.</p>
-        <div class="shot"><img src="assets/shot-synced.png" alt="All photos synced and ready to print" loading="lazy"></div>
+        <div class="shot"><img src="assets/shot-synced.webp" alt="All photos synced and ready to print" loading="lazy"></div>
       </article>
 
       <article class="feature spotlight">
         <h2>Then we mail you the prints</h2>
         <p class="lede">We print every frame on real paper and post it to your door. Your photos leave the screen and land in your hands.</p>
-        <div class="shot"><img src="assets/shot-prints.png" alt="Real prints mailed to your door" loading="lazy"></div>
+        <div class="shot"><img src="assets/shot-prints.webp" alt="Real prints mailed to your door" loading="lazy"></div>
       </article>
     </section>
 
