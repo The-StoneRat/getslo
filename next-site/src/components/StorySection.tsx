@@ -184,13 +184,14 @@ export default function StorySection() {
                 />
               </div>
               
-              <div className="relative w-[190px] sm:w-[220px] md:w-[270px] rounded-[2.5rem] overflow-hidden border-4 border-[#111111] shadow-[0_25px_55px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-1.5 z-10">
+              <div className="relative w-[190px] sm:w-[220px] md:w-[270px] aspect-[904/1740] rounded-[2.5rem] overflow-hidden shadow-[0_25px_55px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-1.5 z-10">
                 <Image
-                  alt="iPhone mockup showing curation screen with dogs"
-                  className="w-full h-auto"
-                  src="/dogsldo.png"
-                  width={310}
-                  height={670}
+                  alt="iPhone mockup showing curation screen"
+                  className="object-cover"
+                  src="/msjdjjd.png"
+                  fill
+                  sizes="(max-width: 640px) 190px, (max-width: 768px) 220px, 270px"
+                  priority
                 />
               </div>
             </FadeIn>
