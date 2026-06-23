@@ -149,6 +149,24 @@ export default function StorySection() {
               <h2 className="font-headline-lg text-[32px] sm:text-[38px] md:text-[44px] leading-tight text-on-surface font-extrabold tracking-tight">
                 A deliberate <span className="font-normal italic">selection process.</span>
               </h2>
+
+              {/* Mobile-only Image (sits between title and description) */}
+              <div className="flex md:hidden justify-center items-center py-4 w-full">
+                {/* White-bordered tactile physical photo print */}
+                <div className="relative w-[270px] aspect-[3/4] bg-[#FCFBF7] p-2.5 pb-7 rounded-[8px] border border-[#e6e2d8] shadow-[0_15px_35px_-10px_rgba(31,27,17,0.12),_0_8px_16px_-8px_rgba(31,27,17,0.06)]">
+                  <div className="relative w-full h-full overflow-hidden rounded-[3px] bg-[#F5F3ED] border border-[#e6e2d8]/60 shadow-[inset_0_1px_3px_rgba(0,0,0,0.08)]">
+                    <Image
+                      alt="Physical photo print representing curation"
+                      className="object-cover"
+                      src="/curation_physical.jpg"
+                      fill
+                      sizes="270px"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+
               <p className="font-body-lg text-base md:text-lg text-on-surface-variant leading-relaxed max-w-md">
                 In an era of infinite scroll and digital clutter, SLO invites you to pause. Curate a tactile, physical archive of your most meaningful moments—crafted to outlive the cloud.
               </p>
@@ -172,54 +190,38 @@ export default function StorySection() {
               </ul>
             </FadeIn>
             
-            <FadeIn className="w-full md:w-1/2 flex justify-center items-center relative py-6 md:py-10">
-              {/* Premium abstract background frame */}
-              <div className="absolute w-[280px] sm:w-[340px] md:w-[400px] aspect-[3/4] -z-10 rounded-[2rem] overflow-hidden opacity-90 shadow-[0_15px_40px_rgba(31,27,17,0.04)] border border-[#1f1b11]/5">
-                <Image
-                  alt="Minimalist abstract gold and cream background"
-                  src="/deliberate_bg.webp"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 280px, (max-width: 768px) 340px, 400px"
-                />
-              </div>
-              
-              <div className="relative w-[190px] sm:w-[220px] md:w-[270px] aspect-[904/1740] rounded-[2.5rem] overflow-hidden shadow-[0_25px_55px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-1.5 z-10">
-                <Image
-                  alt="iPhone mockup showing curation screen"
-                  className="object-cover"
-                  src="/msjdjjd.png"
-                  fill
-                  sizes="(max-width: 640px) 190px, (max-width: 768px) 220px, 270px"
-                  priority
-                />
+            <FadeIn className="hidden md:flex w-full md:w-1/2 justify-center items-center relative py-6 md:py-10">
+              {/* White-bordered tactile physical photo print */}
+              <div className="relative w-[270px] sm:w-[320px] md:w-[390px] aspect-[3/4] bg-[#FCFBF7] p-3 pb-8 sm:p-4 sm:pb-10 md:p-5 md:pb-14 rounded-[8px] border border-[#e6e2d8] shadow-[0_15px_35px_-10px_rgba(31,27,17,0.12),_0_8px_16px_-8px_rgba(31,27,17,0.06)] sm:shadow-[0_30px_60px_-15px_rgba(31,27,17,0.18),_0_15px_30px_-10px_rgba(31,27,17,0.1)] transition-all duration-700 ease-out hover:scale-[1.03] hover:-translate-y-1.5 z-10 rotate-0 sm:rotate-[2deg]">
+                <div className="relative w-full h-full overflow-hidden rounded-[3px] bg-[#F5F3ED] border border-[#e6e2d8]/60 shadow-[inset_0_1px_3px_rgba(0,0,0,0.08)]">
+                  <Image
+                    alt="Physical photo print representing curation"
+                    className="object-cover"
+                    src="/curation_physical.jpg"
+                    fill
+                    sizes="(max-width: 640px) 270px, (max-width: 768px) 320px, 390px"
+                    priority
+                  />
+                </div>
               </div>
             </FadeIn>
           </div>
 
           {/* Row 2: Delivered to Your Door */}
-          <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16 lg:gap-24">
-            <FadeIn className="w-full md:w-1/2 flex justify-center items-center relative py-6 md:py-10">
-              {/* Premium abstract background frame */}
-              <div className="absolute w-[280px] sm:w-[340px] md:w-[400px] aspect-[3/4] -z-10 rounded-[2rem] overflow-hidden opacity-90 shadow-[0_15px_40px_rgba(31,27,17,0.04)] border border-[#1f1b11]/5">
-                <Image
-                  alt="Minimalist abstract terracotta and cream background"
-                  src="/jfuee.png"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 280px, (max-width: 768px) 340px, 400px"
-                />
-              </div>
-              
-              <div className="relative w-[190px] sm:w-[220px] md:w-[270px] aspect-[904/1740] rounded-[2.5rem] overflow-hidden shadow-[0_25px_55px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-1.5 z-10">
-                <Image
-                  alt="iPhone mockup displaying camera interface"
-                  className="object-cover"
-                  src="/floiif .png"
-                  fill
-                  sizes="(max-width: 640px) 190px, (max-width: 768px) 220px, 270px"
-                  priority
-                />
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 lg:gap-24">
+            <FadeIn className="hidden md:flex w-full md:w-1/2 justify-center items-center relative py-6 md:py-10">
+              {/* White-bordered tactile physical photo print */}
+              <div className="relative w-[270px] sm:w-[320px] md:w-[390px] aspect-[3/4] bg-[#FCFBF7] p-3 pb-8 sm:p-4 sm:pb-10 md:p-5 md:pb-14 rounded-[8px] border border-[#e6e2d8] shadow-[0_15px_35px_-10px_rgba(31,27,17,0.12),_0_8px_16px_-8px_rgba(31,27,17,0.06)] sm:shadow-[0_30px_60px_-15px_rgba(31,27,17,0.18),_0_15px_30px_-10px_rgba(31,27,17,0.1)] transition-all duration-700 ease-out hover:scale-[1.03] hover:-translate-y-1.5 z-10 rotate-0 sm:-rotate-[2deg]">
+                <div className="relative w-full h-full overflow-hidden rounded-[3px] bg-[#F5F3ED] border border-[#e6e2d8]/60 shadow-[inset_0_1px_3px_rgba(0,0,0,0.08)]">
+                  <Image
+                    alt="Physical photo print representing the joy of physical photos"
+                    className="object-cover"
+                    src="/joy_physical.jpg"
+                    fill
+                    sizes="(max-width: 640px) 270px, (max-width: 768px) 320px, 390px"
+                    priority
+                  />
+                </div>
               </div>
             </FadeIn>
             
@@ -230,6 +232,24 @@ export default function StorySection() {
               <h2 className="font-headline-lg text-[32px] sm:text-[38px] md:text-[44px] leading-tight text-on-surface font-extrabold tracking-tight">
                 The joy of the <span className="font-normal italic">physical.</span>
               </h2>
+
+              {/* Mobile-only Image (sits between title and description) */}
+              <div className="flex md:hidden justify-center items-center py-4 w-full">
+                {/* White-bordered tactile physical photo print */}
+                <div className="relative w-[270px] aspect-[3/4] bg-[#FCFBF7] p-2.5 pb-7 rounded-[8px] border border-[#e6e2d8] shadow-[0_15px_35px_-10px_rgba(31,27,17,0.12),_0_8px_16px_-8px_rgba(31,27,17,0.06)]">
+                  <div className="relative w-full h-full overflow-hidden rounded-[3px] bg-[#F5F3ED] border border-[#e6e2d8]/60 shadow-[inset_0_1px_3px_rgba(0,0,0,0.08)]">
+                    <Image
+                      alt="Physical photo print representing the joy of physical photos"
+                      className="object-cover"
+                      src="/joy_physical.jpg"
+                      fill
+                      sizes="270px"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+
               <p className="font-body-lg text-base md:text-lg text-on-surface-variant leading-relaxed max-w-md">
                 There is something irreplaceable about holding a photograph in your hands. The texture, the smell of the ink, the way it catches the light.
               </p>
