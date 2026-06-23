@@ -24,20 +24,50 @@ export default function Features() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter-md md:auto-rows-[320px]">
           
-          {/* Card 1: Capture or Import Photos - Minimal Text-Only Layout */}
-          <FadeIn className="md:col-span-8 md:row-span-2 bg-[#FFFDFB] border border-[#1f1b11]/8 rounded-xl shadow-[0_8px_30px_rgba(31,27,17,0.03)] transition-all duration-500 hover:shadow-[0_30px_60px_-15px_rgba(31,27,17,0.08)] hover:border-primary/20 hover:-translate-y-1.5 group flex flex-col justify-center items-center text-center p-8 sm:p-12 md:p-16 min-h-[280px] md:h-auto relative overflow-hidden">
-            <div className="max-w-md md:max-w-lg mx-auto flex flex-col items-center space-y-4">
+          {/* Card 1: Capture or Import Photos - Dual Mockups Layout */}
+          <FadeIn className="md:col-span-8 md:row-span-2 bg-[#FFFDFB] border border-[#1f1b11]/8 rounded-xl shadow-[0_8px_30px_rgba(31,27,17,0.03)] transition-all duration-500 hover:shadow-[0_30px_60px_-15px_rgba(31,27,17,0.08)] hover:border-primary/20 hover:-translate-y-1.5 group flex flex-col justify-between p-8 sm:p-10 md:p-12 pb-0 sm:pb-0 md:pb-0 min-h-[480px] md:h-auto relative overflow-hidden">
+            <div className="max-w-md space-y-3 z-10 text-left">
               <span className="font-label-caps text-[10px] md:text-xs text-primary tracking-[0.3em] uppercase block mb-1">
                 01 / CAPTURE & IMPORT
               </span>
-              <h3 className="font-headline-lg text-3xl sm:text-4xl md:text-5xl text-on-surface font-extrabold tracking-tight leading-tight">
+              <h3 className="font-headline-lg text-3xl sm:text-4xl md:text-[40px] text-on-surface font-extrabold tracking-tight leading-tight">
                 Capture or Import Photos
               </h3>
-              <p className="font-body-lg text-base sm:text-lg md:text-xl text-on-surface-variant/90 leading-relaxed max-w-sm md:max-w-md pt-1">
+              <p className="font-body-lg text-sm sm:text-base md:text-lg text-on-surface-variant/90 leading-relaxed max-w-md pt-0.5">
                 Take photos with the SLO camera or import photos from your gallery.
               </p>
             </div>
+
+            {/* Overlapping Phone Mockups Container */}
+            <div className="relative mt-6 flex justify-center items-end w-full h-[220px] sm:h-[280px] md:h-[320px] overflow-visible select-none pb-0">
+              {/* Left Phone: SLO Camera App (nyc4.png) */}
+              <div className="relative w-[120px] sm:w-[160px] md:w-[185px] rounded-t-2xl sm:rounded-t-[2.2rem] overflow-hidden border-[3px] sm:border-[4px] border-[#161616] shadow-[0_10px_25px_rgba(0,0,0,0.12)] rotate-[-6deg] translate-x-4 sm:translate-x-6 translate-y-4 sm:translate-y-6 transition-all duration-500 group-hover:rotate-[-10deg] group-hover:translate-x-1 sm:group-hover:translate-x-2 group-hover:translate-y-2 z-20">
+                <Image
+                  alt="SLO Camera Interface"
+                  className="w-full h-auto"
+                  src="/nyc4.png"
+                  width={185}
+                  height={358}
+                  sizes="(max-width: 640px) 120px, (max-width: 768px) 160px, 185px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/0 via-white/10 to-transparent pointer-events-none z-30"></div>
+              </div>
+
+              {/* Right Phone: Gallery Import (gallery2.png) */}
+              <div className="relative w-[120px] sm:w-[160px] md:w-[185px] rounded-t-2xl sm:rounded-t-[2.2rem] overflow-hidden border-[3px] sm:border-[4px] border-[#161616] shadow-[0_15px_35px_rgba(0,0,0,0.15)] rotate-[6deg] -translate-x-4 sm:-translate-x-6 translate-y-8 sm:translate-y-12 transition-all duration-500 group-hover:rotate-[10deg] group-hover:translate-x-[-1px] sm:group-hover:translate-x-[-2px] group-hover:translate-y-8 z-10">
+                <Image
+                  alt="Gallery Import Interface"
+                  className="w-full h-auto"
+                  src="/gallery2.png"
+                  width={185}
+                  height={358}
+                  sizes="(max-width: 640px) 120px, (max-width: 768px) 160px, 185px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/0 via-white/10 to-transparent pointer-events-none z-30"></div>
+              </div>
+            </div>
           </FadeIn>
+
 
           {/* Card 2: Choose a Print Size */}
           <FadeIn className="md:col-span-4 md:row-span-1 bg-[#FFFDFB] border border-[#1f1b11]/8 rounded-xl shadow-[0_8px_30px_rgba(31,27,17,0.03)] transition-all duration-500 hover:shadow-[0_30px_60px_-15px_rgba(31,27,17,0.08)] hover:border-primary/20 hover:-translate-y-1.5 group overflow-hidden flex flex-col justify-start p-8 pb-0 h-auto gap-2">

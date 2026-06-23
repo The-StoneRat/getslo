@@ -5,7 +5,7 @@ export default function StorySection() {
   return (
     <>
       {/* Storytelling Section */}
-      <section id="our-story" className="bg-[#F7F5F0] pt-12 md:pt-20 pb-16 md:pb-32 overflow-hidden relative">
+      <section id="our-story" className="bg-[#F7F5F0] pt-12 md:pt-20 pb-8 md:pb-32 overflow-hidden relative">
         {/* Gallery Spotlight Glow */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.5)_0%,_rgba(255,255,255,0)_75%)] pointer-events-none"></div>
         
@@ -80,11 +80,11 @@ export default function StorySection() {
           </div>
 
           {/* Interactive Print Stack (Mobile Only) */}
-          <FadeIn className="block md:hidden w-full flex justify-center items-center h-[330px] relative mt-4">
+          <FadeIn className="block md:hidden w-full flex justify-center items-center h-[260px] relative mt-4">
             <div className="relative w-full max-w-[310px] h-full flex items-center justify-center group">
               
               {/* Print 1 (Back left) */}
-              <div className="absolute w-[170px] h-[210px] bg-white p-2.5 rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#E2E2E2] -rotate-12 -translate-x-12 -translate-y-8 transition-all duration-700 ease-out group-hover:-rotate-[16deg] group-hover:-translate-x-20 group-hover:-translate-y-14 group-hover:scale-105 z-10">
+              <div className="absolute w-[170px] h-[210px] bg-white p-2.5 rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-[#E2E2E2] -rotate-12 -translate-x-12 -translate-y-8 transition-all duration-700 ease-out group-hover:-rotate-[16deg] group-hover:-translate-x-20 group-hover:-translate-y-14 group-hover:scale-105 group-active:-rotate-[16deg] group-active:-translate-x-20 group-active:-translate-y-14 group-active:scale-105 z-10">
                 <div className="relative w-full aspect-square border border-[#E8E8E8] overflow-hidden bg-[#F7F5F0] mb-3">
                   <Image
                     alt="Friends photo print"
@@ -100,7 +100,7 @@ export default function StorySection() {
               </div>
 
               {/* Print 2 (Back right) */}
-              <div className="absolute w-[170px] h-[210px] bg-white p-2.5 rounded-sm shadow-[0_15px_35px_rgba(0,0,0,0.06)] border border-[#E2E2E2] rotate-12 translate-x-14 -translate-y-6 transition-all duration-700 ease-out group-hover:rotate-[18deg] group-hover:translate-x-22 group-hover:-translate-y-10 group-hover:scale-105 z-10">
+              <div className="absolute w-[170px] h-[210px] bg-white p-2.5 rounded-sm shadow-[0_15px_35px_rgba(0,0,0,0.06)] border border-[#E2E2E2] rotate-12 translate-x-14 -translate-y-6 transition-all duration-700 ease-out group-hover:rotate-[18deg] group-hover:translate-x-22 group-hover:-translate-y-10 group-hover:scale-105 group-active:rotate-[18deg] group-active:translate-x-22 group-active:-translate-y-10 group-active:scale-105 z-10">
                 <div className="relative w-full aspect-square border border-[#E8E8E8] overflow-hidden bg-[#F7F5F0] mb-3">
                   <Image
                     alt="Sunshine photo print"

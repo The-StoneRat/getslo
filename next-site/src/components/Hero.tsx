@@ -41,19 +41,21 @@ export default function Hero() {
         </FadeIn>
 
         {/* Product Showcase (Unified 3D Layered Mockup & Prints Collage) */}
-        <FadeIn className="w-full relative h-[400px] sm:h-[500px] md:h-[600px] flex items-center justify-center mt-12 md:mt-16 max-w-[320px] sm:max-w-[550px] md:max-w-[750px] mx-auto z-10">
+        <FadeIn className="w-full relative h-[400px] sm:h-[500px] md:h-[600px] flex items-center justify-center mt-12 md:mt-16 max-w-[320px] sm:max-w-[550px] md:max-w-[750px] mx-auto z-10 group">
           
           {/* Subtle warm brand gold spotlight backglow */}
-          <div className="absolute -inset-10 sm:-inset-20 bg-[radial-gradient(circle_at_center,_rgba(242,183,5,0.04)_0%,_transparent_75%)] pointer-events-none z-0 rounded-full scale-90 animate-pulse" style={{ animationDuration: '10s' }}></div>          {/* 1. Left-Behind Print: Dog (Square Polaroid, z-10) */}
-          <div className="absolute z-10 top-[12%] sm:top-[15%] left-[-4%] sm:left-[2%] md:left-[6%] floating-photo photo-stack-1">
-            <div className="w-[75px] sm:w-[120px] md:w-[150px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_8px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-[#1f1b11]/5 transform -rotate-[15deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card1">
+          <div className="absolute -inset-10 sm:-inset-20 bg-[radial-gradient(circle_at_center,_rgba(242,183,5,0.04)_0%,_transparent_75%)] pointer-events-none z-0 rounded-full scale-90 animate-pulse" style={{ animationDuration: '10s' }}></div>
+
+          {/* 1. Left-Behind Print: Dog (Square Polaroid, z-10) */}
+          <div className="absolute z-10 top-[14%] sm:top-[15%] left-[0%] sm:left-[2%] md:left-[6%] transition-all duration-700 ease-out translate-x-4 sm:translate-x-8 md:translate-x-12 translate-y-1.5 sm:translate-y-2.5 md:translate-y-3.5 rotate-[3deg] sm:rotate-[5deg] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:rotate-0 group-active:translate-x-0 group-active:translate-y-0 group-active:rotate-0 floating-photo photo-stack-1">
+            <div className="w-[90px] sm:w-[120px] md:w-[150px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_8px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-[#1f1b11]/5 transform -rotate-[15deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card1">
               <div className="relative w-full aspect-square overflow-hidden rounded-[1px] bg-[#F5F3ED] border border-[#1f1b11]/5">
                 <Image
                   alt="Happy dog photo print"
                   className="object-cover transition-transform duration-700 group-hover/card1:scale-105"
                   src="/dog4.png"
                   fill
-                  sizes="(max-width: 640px) 75px, (max-width: 768px) 120px, 150px"
+                  sizes="(max-width: 640px) 90px, (max-width: 768px) 120px, 150px"
                 />
                 {/* Gloss / Sheen overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/15 mix-blend-overlay pointer-events-none z-10"></div>
@@ -66,15 +68,15 @@ export default function Hero() {
           </div>
 
           {/* 2. Right-Behind Print: Sunset Tree (Square Polaroid, z-10) */}
-          <div className="absolute z-10 top-[10%] sm:top-[12%] right-[-4%] sm:right-[2%] md:right-[6%] floating-photo photo-stack-2">
-            <div className="w-[75px] sm:w-[120px] md:w-[150px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_8px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-[#1f1b11]/5 transform rotate-[12deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card2">
+          <div className="absolute z-10 top-[12%] sm:top-[12%] right-[0%] sm:right-[2%] md:right-[6%] transition-all duration-700 ease-out -translate-x-4 sm:-translate-x-8 md:-translate-x-12 translate-y-1.5 sm:translate-y-2.5 md:translate-y-3.5 rotate-[-3deg] sm:rotate-[-5deg] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:rotate-0 group-active:translate-x-0 group-active:translate-y-0 group-active:rotate-0 floating-photo photo-stack-2">
+            <div className="w-[90px] sm:w-[120px] md:w-[150px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_8px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-[#1f1b11]/5 transform rotate-[12deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card2">
               <div className="relative w-full aspect-square overflow-hidden rounded-[1px] bg-[#F5F3ED] border border-[#1f1b11]/5">
                 <Image
                   alt="Friends photo polaroid print"
                   className="object-cover transition-transform duration-700 group-hover/card2:scale-105"
                   src="/frinfj4.png"
                   fill
-                  sizes="(max-width: 640px) 75px, (max-width: 768px) 120px, 150px"
+                  sizes="(max-width: 640px) 90px, (max-width: 768px) 120px, 150px"
                 />
                 {/* Gloss / Sheen overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/15 mix-blend-overlay pointer-events-none z-10"></div>
@@ -96,20 +98,18 @@ export default function Hero() {
               height={543}
               priority
             />
-            {/* Shifting glass glare sheen effect on hover */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/0 via-white/15 to-transparent -translate-x-full group-hover/phone:translate-x-full transition-transform duration-1000 ease-out pointer-events-none z-30"></div>
           </div>
 
           {/* 4. Left-Front Print: Candid Nostalgic (Portrait Polaroid, z-30 on desktop, z-10 on mobile) */}
-          <div className="absolute z-10 sm:z-30 bottom-[8%] sm:bottom-[10%] left-[2%] sm:left-[8%] md:left-[12%] floating-photo photo-stack-3">
-            <div className="w-[75px] sm:w-[120px] md:w-[150px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_12px_28px_rgba(0,0,0,0.08)] hover:shadow-[0_24px_45px_rgba(0,0,0,0.15)] border border-[#1f1b11]/5 transform -rotate-[8deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card3">
+          <div className="absolute z-10 sm:z-30 bottom-[10%] sm:bottom-[10%] left-[6%] sm:left-[8%] md:left-[12%] transition-all duration-700 ease-out translate-x-3 sm:translate-x-6 md:translate-x-9 -translate-y-1 sm:-translate-y-1.5 md:-translate-y-2 rotate-[-2deg] sm:rotate-[-3deg] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:rotate-0 group-active:translate-x-0 group-active:translate-y-0 group-active:rotate-0 floating-photo photo-stack-3">
+            <div className="w-[90px] sm:w-[120px] md:w-[150px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_12px_28px_rgba(0,0,0,0.08)] hover:shadow-[0_24px_45px_rgba(0,0,0,0.15)] border border-[#1f1b11]/5 transform -rotate-[8deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card3">
               <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[1px] bg-[#F5F3ED] border border-[#1f1b11]/5">
                 <Image
                   alt="Candid nostalgic photo print"
                   className="object-cover transition-transform duration-700 group-hover/card3:scale-105"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuARCGkzV8vTRxr9sTN5Tq_EPD8OPQTa7ZvOu6gMAr2V7RSQif_pc8eGP_nK9lpdhf9Tll5ArqRJg3jdQouqkw1jMzUyWc1BvcmiHu54pTersAY5riYMGpMBSpnC-dIUhIDeOFnbrM8TxdhYuZ1I42nF59LmKpq4Q84a0Bmql4t8eskp_e3w6bAzU3tcgLGj6aAkqTCiG9biL096PGlbPTGWZFbAEGJ4GkN6itscGdrOS7i02sprdn1PEts7Ui2kNzdbzwU6b4XKjlQ"
                   fill
-                  sizes="(max-width: 640px) 75px, (max-width: 768px) 120px, 150px"
+                  sizes="(max-width: 640px) 90px, (max-width: 768px) 120px, 150px"
                 />
                 {/* Gloss / Sheen overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/15 mix-blend-overlay pointer-events-none z-10"></div>
@@ -122,15 +122,15 @@ export default function Hero() {
           </div>
 
           {/* 5. Right-Front Print: Night Architecture (Square Polaroid, z-30 on desktop, z-10 on mobile) */}
-          <div className="absolute z-10 sm:z-30 bottom-[10%] sm:bottom-[12%] right-[2%] sm:right-[8%] md:right-[12%] floating-photo photo-stack-4">
-            <div className="w-[85px] sm:w-[140px] md:w-[180px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_12px_28px_rgba(0,0,0,0.08)] hover:shadow-[0_24px_45px_rgba(0,0,0,0.15)] border border-[#1f1b11]/5 transform rotate-[10deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card4">
+          <div className="absolute z-10 sm:z-30 bottom-[12%] sm:bottom-[12%] right-[6%] sm:right-[8%] md:right-[12%] transition-all duration-700 ease-out -translate-x-3 sm:-translate-x-6 md:-translate-x-9 -translate-y-1 sm:-translate-y-1.5 md:-translate-y-2 rotate-[2deg] sm:rotate-[3deg] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:rotate-0 group-active:translate-x-0 group-active:translate-y-0 group-active:rotate-0 floating-photo photo-stack-4">
+            <div className="w-[100px] sm:w-[140px] md:w-[180px] h-auto bg-[#FFFDFB] p-1.5 sm:p-2 md:p-3 pb-3 sm:pb-5 md:pb-7 rounded-sm shadow-[0_12px_28px_rgba(0,0,0,0.08)] hover:shadow-[0_24px_45px_rgba(0,0,0,0.15)] border border-[#1f1b11]/5 transform rotate-[10deg] transition-all duration-500 hover:rotate-0 hover:scale-105 hover:z-45 cursor-pointer flex flex-col gap-1 sm:gap-1.5 md:gap-2 group/card4">
               <div className="relative w-full aspect-square overflow-hidden rounded-[1px] bg-[#F5F3ED] border border-[#1f1b11]/5">
                 <Image
                   alt="Night city traffic light trails polaroid print"
                   className="object-cover transition-transform duration-700 group-hover/card4:scale-105"
                   src="/nightar.png"
                   fill
-                  sizes="(max-width: 640px) 85px, (max-width: 768px) 140px, 180px"
+                  sizes="(max-width: 640px) 100px, (max-width: 768px) 140px, 180px"
                 />
                 {/* Gloss / Sheen overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/15 mix-blend-overlay pointer-events-none z-10"></div>
