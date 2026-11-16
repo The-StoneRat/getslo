@@ -75,7 +75,7 @@ body {
 .nav-cta { display: flex; align-items: center; gap: 12px; }
 .nav-cta .badge-link img { height: 38px; width: auto; display: block; }
 
-/* iOS "App Store — coming soon" badge (inverted, matches Play badge) */
+/* iOS App Store badge (inverted, matches Play badge) */
 .ios-badge {
   display: inline-flex;
   align-items: center;

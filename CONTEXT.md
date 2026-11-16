@@ -12,12 +12,11 @@ Static HTML/CSS, no build step. Hosted on GitHub Pages, custom domain `getslo.ca
 - **Prints** — physical photo prints mailed to the user's door. The payoff of the product.
 - **LUT** — color look baked into the photo *at capture*. **One fixed LUT per pack**, set by the pack's film type. Users do NOT import, make, or swap LUTs. No "bring your own LUT", no creator marketplace.
 - **No RAW** — Slo does not save RAW/DNG/ProRaw or expose a pro-export workflow. Do not claim it.
-- **Coming soon (iOS)** — iOS app is pre-launch. Android is the shipping product.
 
 ## Platform status (as of 2026-06-18)
 
 - **Android** — LIVE. Play Store: `art.stonerat.slo`. The only installable product today.
-- **iOS** — COMING SOON. In active development (pre-MVP). Site shows a greyed "iOS — coming soon" pill that is also a `mailto:` notify link (no email-capture backend; GitHub Pages is no-build). No App Store link yet.
+- **iOS** — LIVE (2026-11-16). App Store: `https://apps.apple.com/us/app/slo-cam/id6783019469`. Site shows a black "Download on the App Store" badge.
 
 ## Voice
 
@@ -33,7 +32,7 @@ Static HTML/CSS, no build step. Hosted on GitHub Pages, custom domain `getslo.ca
 
 ## Page structure (locked 2026-06-18)
 
-1. **Nav** — `Slo.` wordmark left; right: live Play badge + greyed "iOS — coming soon" `mailto:` pill.
+1. **Nav** — `Slo.` wordmark left; right: live Play badge + App Store badge.
 2. **Hero** — headline *"Slow photos. Real prints, mailed to your door."* + one explanatory sub-line + store badges.
 3. **Video block** — app demo placeholder (real asset supplied later).
 4. **Feature 1 — camera feel** — shoot through a real film-LUT viewfinder; ground glass; tactile.
