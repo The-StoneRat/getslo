@@ -1,6 +1,6 @@
-# CLAUDE.md — getslo.cam
+# CLAUDE.md — slo.photo
 
-Static marketing site for Slo (HTML/CSS, no build, GitHub Pages, domain `getslo.cam`).
+Static marketing site for Slo (HTML/CSS, no build, GitHub Pages, domain `slo.photo`).
 
 **Read `CONTEXT.md` first** — voice, banned terms ("film roll"/"roll" → "pack"/"slot"), platform status, locked page structure. `HANDOFF.md` is the 2026-06-18 build-out plan for this site (not the cross-repo issue convention).
 

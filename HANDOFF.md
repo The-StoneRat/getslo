@@ -1,10 +1,10 @@
-# HANDOFF — getslo.cam build-out (Slo marketing site)
+# HANDOFF — slo.photo build-out (Slo marketing site)
 
 Plan finalized 2026-06-18. Execute this in-repo. Read `CONTEXT.md` first — it is the source of truth for voice, banned terms, platform status, and locked page structure.
 
 ## What this is
 
-Expand the existing single-screen `index.html` into a full single-product app-landing page. Keep the stack: **static HTML/CSS, no build, GitHub Pages, domain `getslo.cam`.** Extend `styles.css` and `index.html` in place. Keep brand: bg `#0a0a0a`, accent `#f2b705`, text `#fafafa`, Roboto Flex.
+Expand the existing single-screen `index.html` into a full single-product app-landing page. Keep the stack: **static HTML/CSS, no build, GitHub Pages, domain `slo.photo`.** Extend `styles.css` and `index.html` in place. Keep brand: bg `#0a0a0a`, accent `#f2b705`, text `#fafafa`, Roboto Flex.
 
 ## HARD RULE — copy is original
 
