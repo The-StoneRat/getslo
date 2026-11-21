@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://getslo.cam/sitemap.xml
+Sitemap: https://slo.photo/sitemap.xml

@@ -1,8 +1,8 @@
-# CONTEXT — getslo.cam
+# CONTEXT — slo.photo
 
 Marketing site for **Slo**, a slow-photography app: shoot → apply LUT → keep/discard → real prints mailed to your door.
 
-Static HTML/CSS, no build step. Hosted on GitHub Pages, custom domain `getslo.cam`.
+Static HTML/CSS, no build step. Hosted on GitHub Pages, custom domain `slo.photo`.
 
 ## Glossary
 
